@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lalala.css">
+</head>
+
+<body>
+
+        <div class="header">
+                <div class="container">
+                    <h1 class="titulo">Conversion Machine</h1>
+          
+                </div>
+               </div>
+<br><br>
+
+
+
+<div class="tabela">
+        <div class="subtabela">
+        <h3>Insira um valor para conversão:</h3>
+        <input id="input_numero_para_converter" type="text"  placeholder="Digite o valor em decimal">
+<br>
+        <select id="inputBase">
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+                <option value="8">Octal</option>
+                <option value="2">Binário</option>
+            </select>
+            <br>
+            <div id="div_resultado_conversao"></div>
+<br><br>
+
+<button onclick="converter()">Converter</button>
+<br><br>
+</div>
+</div>
+ 
+
+
+</body>
+</html>
+<script>
+
+function converter() {
+        let numeroParaConverter = input_numero_para_converter.value
+        let baseNumeroParaConverter = inputBase.value
+        let numeroEmDecimal = parseInt(numeroParaConverter,baseNumeroParaConverter)
+        let numeroBinario = numeroEmDecimal.toString(2);
+        let numeroOctal = numeroEmDecimal.toString(8);
+        let numeroHexadecimal = numeroEmDecimal.toString(16);
+        div_resultado_conversao.innerHTML = ` <br> <div class = "div_resultado_conversao">
+                <br>
+        Decimal: ${numeroEmDecimal}
+        <br><br>
+        Binário: ${numeroBinario}
+        <br><br>
+        Octal: ${numeroOctal}
+        <br><br>
+        Hexadecimal: ${numeroHexadecimal}
+        <br>
+        </div>`
+    }
+
+</script>
+
+                
+
