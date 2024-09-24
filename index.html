@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="assets/convertogimi.css">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>converto-gimi</title>
+</head>
+
+<body>
+        <header>
+                <h1>converto-gimi</h1>
+        </header>
+
+        <main>
+                <section>
+                        <h2 id="h2_inserir_valor">
+                                &gt; insira o valor
+                        </h2>
+
+                        <span id="inserir_valor">
+                                <input id="input_valor_converter">
+
+                                <select id="select_base">
+                                        <option value="10">decimal</option>
+                                        <option value="2">binário</option>
+                                        <option value="8">octal</option>
+                                        <option value="16">hexadecimal</option>
+                                </select>
+                        </span>
+
+                        <span id="botao">
+                                <button onclick="converter()">
+                                        converter
+                                </button>
+                        </span>
+                </section>
+
+                <div id="div_resultado"></div>
+        </main>
+</body>
+</html>
+<script src="assets/convertogimi.js"></script>
